@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #C4C4C4;
+}
+
+.container {
+    max-width: 500px;
+    margin: 150px auto;
+}
+
+.container .search-input-box {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.search-input-box .input {
+    height: 61px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 13px 5px 13px;
+
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 56px;
+}
+
+.search-input-box .autocom-list {
+    padding: 0;
+    max-height: 220px;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-input-box.active .autocom-list {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.autocom-list li {
+    background: #E3E3E3;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    max-width: 100%;
+    list-style: none;
+    border: 2px solid #000000;
+    cursor: default;
+    display: none;
+
+}
+
+.search-input-box.active .autocom-list li {
+    display: block;
+}
+
+.autocom-list li:hover {
+    background: #65CDF9;
+}
+
+.responce-box.hidden {
+    display: none;
+}
+
+.responce-box {
+    display: block;
+
+}
+
+.card.hidden {
+    display: none;
+}
+
+.card {
+    display: block;
+
+    width: 503px;
+    height: 101px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 16px;
+    background: #E27BEB;
+    border: 1px solid #000000;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.cancel-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 15px;
+}
+
+.vector-1 {
+    width: 100%;
+    position: absolute;
+}
+
+.vector-2 {
+    width: 100%;
+    position: absolute;
+}
